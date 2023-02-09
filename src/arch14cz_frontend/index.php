@@ -23,6 +23,7 @@
 		<div id="navigation">
 			<ul>
 				<li><a href="?page=query">QUERY</a></li>
+				<li><a href="?page=download">DOWNLOAD</a></li>
 				<li><a href="?page=about">ABOUT</a></li>
 			</ul>
 		</div>

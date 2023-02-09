@@ -1,4 +1,5 @@
 <?php
+session_start();
 $query = "SELECT * FROM c_14_main";
 $conditions = [];
 
@@ -79,11 +80,15 @@ $columns = array(
 );
 
 require_once("db_connect.php");
-//$db = pg_connect("host=localhost dbname=dbarch14 user=dbarch14user password=6KMQZfoWEyWu0PvZN6tAUTXscx");
 $results = pg_query($db, $query);
 $num_rows = pg_num_rows($results);
+$_SESSION['conditions'] = $conditions;
 ?>
 <p>Found <?php echo $num_rows; ?> entries matching the query.</p>
+<form action="export.php" method="post" enctype="multipart/form-data" id="exportform">
+	<input type="submit" name="Export_CSV" value="Export to CSV"/>
+	<input type="submit" name="Export_Excel" value="Export to Excel"/>
+</form>
 <table id="results">
 	<thead>
 		<tr>

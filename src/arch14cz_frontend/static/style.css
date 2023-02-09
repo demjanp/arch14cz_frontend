@@ -197,6 +197,15 @@ header a {
 
 /******** RESULTS TABLE ********/
 
+#exportform {
+	display: inline;
+}
+
+#exportform > input {
+	display: inline;
+	margin-bottom: 0.5rem;
+}
+
 #results {
 	margin:0px;
 	padding:0px;

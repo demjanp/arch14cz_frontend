@@ -1,6 +1,5 @@
 <?php
 require_once("db_connect.php");
-//$db = pg_connect("host=localhost dbname=dbarch14 user=dbarch14user password=6KMQZfoWEyWu0PvZN6tAUTXscx");
 $countries = pg_query($db, "SELECT * FROM c_14_dict_country");
 $districts = pg_query($db, "SELECT * FROM c_14_dict_district");
 $cadastres = pg_query($db, "SELECT * FROM c_14_dict_cadastre");
