@@ -1,0 +1,275 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #E5DBD1;
+}
+
+
+/******** HEADLINE ********/
+
+#headline {
+	padding: 0.5rem;
+	color: white;
+	font-family: Roboto, sans-serif;
+	background-color: black;
+	background-image: url(milea_blur.png);
+	background-size: cover;
+	background-position: 50% 65%;
+}
+
+#headline h1 {
+	clear: both;
+	padding: 0.5rem;
+	background-color: rgba(0,0,0,.4);
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+.logo_a {
+	color: red;
+	vertical-align: super;
+	font-size: 22px;
+}
+
+.logo_b {
+	color: red;
+}
+
+#headline p {
+	clear: both;
+	padding: 0.5rem;
+	background-color: rgba(0,0,0,.4);
+	
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 20px;
+}
+
+#navigation a {
+	color: white;
+	border: none;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#navigation {
+	clear: both;
+	padding: 0.5rem;
+	background-color: rgba(0,0,0,.4);
+	font-size: 16px;
+	font-weight: 200;
+}
+
+#navigation li {
+	display:inline;
+	margin: 0;
+	padding: 0;
+	padding-left: 1rem;
+}
+
+#navigation ul {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
+
+/******** CONTENT ********/
+
+#content {
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #E5DBD1;
+	background-size: 100%, 100%, cover;
+	background-position: 50% 0%;
+	padding-top: 0.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-bottom: 2.8rem;
+}
+
+#content a {
+	color: white;
+	font-weight: 200;
+	text-decoration: none;
+}
+
+#content h2 {
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+
+/******** COLUMN ********/
+
+.column {
+	clear: both;
+	background-color: #595954;
+	color: white;
+	padding: 0.5rem;
+	margin: 0.5em;
+	margin-bottom: 1em;
+}
+
+#content a {
+	color: white;
+	font-weight: 200;
+	border-bottom: 1px solid white;
+}
+
+#content a.emphasis {
+	color: red;
+	font-weight: bold;
+	border-bottom: 1px solid red;
+}
+
+.emphasis {
+	font-weight: bold;
+	color: red;
+}
+
+.image {
+	font-size: 15px;
+	text-align: center;
+	color: black;
+	background-color: white;
+	padding: 16px;
+}
+
+.image img {
+	width: 90%;
+	padding: 0;
+	max-width: 500px;
+	background-color: white;
+}
+
+.image p {
+	padding: 0;
+	max-width: 500px;
+	font-style: italic;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+}
+
+.image .emphasis {
+	color: #0c0c0c;
+}
+
+/******** SEARCH FORM ********/
+
+#searchform {
+	background-color: #595954;
+	color: white;
+	padding: 0.5rem;
+	margin: 0.5em;
+	margin-bottom: 1em;
+}
+
+#searchform fieldset {
+	float: left;
+	margin-bottom: 0.5rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.searchgroup {
+	clear: both;
+	padding: 0.5rem;
+}
+
+.checklist {
+	height: 200px;
+	overflow-y: scroll;
+}
+
+#searchform input[type=submit] {
+	padding: 0.5rem 0.8rem
+}
+
+
+/******** RESULTS TABLE ********/
+
+#results {
+	margin:0px;
+	padding:0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	font-size:12px;
+	font-family:Arial,sans-serif;
+	font-weight:normal;	
+}
+
+#results > thead > tr {
+	background-color: #595954;
+}
+
+#results > thead > tr > td {	
+	vertical-align:middle;
+	border:1px solid #00699E;
+	border-width:1px 1px 1px 1px;
+	text-align:center;
+	padding:4px;
+	color:#fff;
+	font-weight:bold;
+}
+
+#results > tbody > tr > td {
+	vertical-align:middle;
+	border:1px solid #00699E;
+	border-width:1px 1px 1px 1px;
+	text-align:center;
+	padding:4px;
+	background-color: white;
+}
+
+#results > tbody > tr > td > div > ol {
+	margin: 0px;
+	padding-left: 18px;
+}
+
+#results > tbody > tr > td.sources {
+	text-align:left;
+}
+
+#results > tbody > tr > td > div {
+	height: 14px;
+	overflow: hidden;
+	cursor: pointer;
+	cursor: hand;
+}
+
+
+/******** FOOTER ********/
+
+.footer {
+	padding: 0.5rem;
+	padding-bottom: 0.5rem;
+	text-align: center;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	background-color: #595954;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer a {
+	font-weight: 200;
+	color: white;
+}
+
+.footer img {
+	padding: 0;
+	margin: 0;
+	vertical-align:middle;
+}
