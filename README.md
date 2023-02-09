@@ -31,6 +31,11 @@ To clone the `arch14cz_frontend` GitHub project, follow these steps:
 <pre><code>git clone https://github.com/demjanp/arch14cz_frontend.git</code></pre>
 5. The repository will be cloned to a new directory named `arch14cz_frontend` in your current directory.
 
+### Publishing the Frontend
+
+1. Edit the `db_connect.php` file to reflect the correct the hostname, database name, username and password.
+2. Upload all project files to the root directory on the web server. 
+
 ## Contact: <a name="contact"></a>
 Peter Demján (peter.demjan@gmail.com)
 
