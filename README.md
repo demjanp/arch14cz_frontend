@@ -17,6 +17,8 @@ Created on 5. 2. 2023
 ## About Arch14CZ - Frontend <a name="about"></a>
 Frontend web interface for Arch14CZ - the database of archaeological radiocarbon dates of the Czech Republic.
 
+For the backend interface see the [arch14cz_backend](https://github.com/demjanp/arch14cz_backend) project.
+
 ## Developer Notes <a name="developer"></a>
 Arch14CZ - Frontend requires PHP 5 and PostgreSQL installed on the server.
 
@@ -33,8 +35,9 @@ To clone the `arch14cz_frontend` GitHub project, follow these steps:
 
 ### Publishing the Frontend
 
-1. Edit the `db_connect.php` file to reflect the correct the hostname, database name, username and password of the Arch14CZ frontend database.
-2. Upload all project files to the root directory on the web server. 
+1. Download the [latest release](https://github.com/demjanp/arch14cz_frontend/releases/latest).
+2. Edit the `db_connect.php` file to reflect the correct the hostname, database name, username and password of the Arch14CZ frontend database.
+3. Upload the contents of the folder `src/arch14cz_frontend` to the root directory on the web server. 
 
 ## Contact: <a name="contact"></a>
 Peter Demján (peter.demjan@gmail.com)
