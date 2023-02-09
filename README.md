@@ -33,7 +33,7 @@ To clone the `arch14cz_frontend` GitHub project, follow these steps:
 
 ### Publishing the Frontend
 
-1. Edit the `db_connect.php` file to reflect the correct the hostname, database name, username and password.
+1. Edit the `db_connect.php` file to reflect the correct the hostname, database name, username and password of the Arch14CZ frontend database.
 2. Upload all project files to the root directory on the web server. 
 
 ## Contact: <a name="contact"></a>
