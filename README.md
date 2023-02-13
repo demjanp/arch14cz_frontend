@@ -1,13 +1,15 @@
 # ARCH14CZ - Frontend
 Frontend interface for Arch14CZ - the database of archaeological radiocarbon dates of the Czech Republic
 
-Created on 5. 2. 2023
+Created on 14. 12. 2021
 
 <details>
 <summary>Table of Contents</summary>
 
 1. [About Arch14CZ](#about)
 2. [Developer Notes](#developer)
+   1. [Cloning the GitHub Project](#cloning)
+   2. [Publishing the Frontend](#publishing)
 3. [Contact](#contact)
 4. [Acknowledgements](#acknowledgements)
 5. [License](#license)
@@ -22,7 +24,7 @@ For the backend interface see the [arch14cz_backend](https://github.com/demjanp/
 ## Developer Notes <a name="developer"></a>
 Arch14CZ - Frontend requires PHP 5 and PostgreSQL installed on the server.
 
-### Cloning the GitHub Project
+### Cloning the GitHub Project <a name="cloning"></a>
 
 To clone the `arch14cz_frontend` GitHub project, follow these steps:
 
@@ -33,7 +35,7 @@ To clone the `arch14cz_frontend` GitHub project, follow these steps:
 <pre><code>git clone https://github.com/demjanp/arch14cz_frontend.git</code></pre>
 5. The repository will be cloned to a new directory named `arch14cz_frontend` in your current directory.
 
-### Publishing the Frontend
+### Publishing the Frontend <a name="publishing"></a>
 
 1. Download the [latest release](https://github.com/demjanp/arch14cz_frontend/releases/latest).
 2. Edit the `db_connect.php` file to reflect the correct the hostname, database name, username and password of the Arch14CZ frontend database.
