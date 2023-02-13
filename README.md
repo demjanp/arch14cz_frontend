@@ -3,9 +3,7 @@ Frontend interface for Arch14CZ - the database of archaeological radiocarbon dat
 
 Created on 14. 12. 2021
 
-<details>
-<summary>Table of Contents</summary>
-
+**Table of Contents**
 1. [About Arch14CZ](#about)
 2. [Developer Notes](#developer)
    1. [Cloning the GitHub Project](#cloning)
@@ -13,8 +11,6 @@ Created on 14. 12. 2021
 3. [Contact](#contact)
 4. [Acknowledgements](#acknowledgements)
 5. [License](#license)
-
-</details>
 
 ## About Arch14CZ - Frontend <a name="about"></a>
 Frontend web interface for Arch14CZ - the database of archaeological radiocarbon dates of the Czech Republic.
