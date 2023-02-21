@@ -4,4 +4,5 @@ if (isset($_POST["submit"])) {
 } else {
 	require_once("searchform.php");
 };
+require_once("updated.php");
 ?>

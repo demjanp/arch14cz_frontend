@@ -1,12 +1,12 @@
 <?php
 require_once("db_connect.php");
-$countries = pg_query($db, "SELECT * FROM c_14_dict_country");
-$districts = pg_query($db, "SELECT * FROM c_14_dict_district");
-$cadastres = pg_query($db, "SELECT * FROM c_14_dict_cadastre");
+$countries = pg_query($db, "SELECT * FROM c_14_dict_country ORDER BY \"Name\" ASC");
+$districts = pg_query($db, "SELECT * FROM c_14_dict_district ORDER BY \"Code\" ASC");
+$cadastres = pg_query($db, "SELECT * FROM c_14_dict_cadastre ORDER BY \"Name\" ASC");
 $relative_datings = pg_query($db, "SELECT * FROM c_14_dict_relative_dating");
-$activity_areas = pg_query($db, "SELECT * FROM c_14_dict_activity_area");
-$features = pg_query($db, "SELECT * FROM c_14_dict_feature");
-$materials = pg_query($db, "SELECT * FROM c_14_dict_material");
+$activity_areas = pg_query($db, "SELECT * FROM c_14_dict_activity_area ORDER BY \"Name\" ASC");
+$features = pg_query($db, "SELECT * FROM c_14_dict_feature ORDER BY \"Name\" ASC");
+$materials = pg_query($db, "SELECT * FROM c_14_dict_material ORDER BY \"Name\" ASC");
 ?>
 
 <div id="searchform">

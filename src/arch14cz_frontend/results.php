@@ -50,6 +50,7 @@ if (isset($_POST["Material"])) {
 if ($conditions) {
 	$query = $query." WHERE ".implode(" AND ", $conditions);
 };
+$query = $query." ORDER BY \"C_14_Lab_Code\" ASC";
 
 $columns = array(
 	"Arch14CZ_ID" => "Arch14CZ_ID", 
