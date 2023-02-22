@@ -5,10 +5,10 @@ $conditions = [];
 
 if ($_POST["Cadastre"] != "") {
 	$cadastre = explode("#", $_POST["Cadastre"]);
-	array_push($conditions, "(\"Cadastre\" = '".$cadastre[0]."' AND \"District\" = '".$cadastre[1]."' AND \"Country_Code\" = '".$cadastre[2]."')");
+	array_push($conditions, "(\"Cadastre\" = '".$cadastre[2]."' AND \"District\" = '".$cadastre[1]."' AND \"Country_Code\" = '".$cadastre[0]."')");
 } elseif ($_POST["District"] != "") {
 	$district = explode("#", $_POST["District"]);
-	array_push($conditions, "(\"District\" = '".$district[0]."' AND \"Country_Code\" = '".$district[1]."')");
+	array_push($conditions, "(\"District\" = '".$district[1]."' AND \"Country_Code\" = '".$district[0]."')");
 } elseif ($_POST["Country"] != "") {
 	array_push($conditions, "(\"Country\" = '".$_POST["Country"]."')");
 };

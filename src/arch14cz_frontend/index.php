@@ -1,3 +1,9 @@
+<?php
+if (isset($_GET['verb'])) {
+	require_once("api.php");
+} else {
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -24,6 +30,7 @@
 			<ul>
 				<li><a href="?page=query">QUERY</a></li>
 				<li><a href="?page=download">DOWNLOAD</a></li>
+				<li><a href="?page=api_doc">API</a></li>
 				<li><a href="?page=about">ABOUT</a></li>
 			</ul>
 		</div>
@@ -39,3 +46,6 @@
 	</footer>
 </body>
 </html>
+<?php
+}
+?>
