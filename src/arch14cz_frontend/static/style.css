@@ -100,9 +100,22 @@ header a {
 }
 
 #content h2 {
-	color: white;
+	color: #DCD2C7;
 	font-weight: 600;
 	font-size: 20px;
+}
+
+#content h3 {
+	color: #DCD2C7;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+#content h4 {
+	color: #DCD2C7;
+	font-weight: 200;
+	font-size: 15px;
+	text-decoration: underline;
 }
 
 
