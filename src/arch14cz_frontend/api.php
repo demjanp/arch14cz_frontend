@@ -5,11 +5,11 @@ $query = "";
 if (!isset($_GET["verb"])) {
 	;
 } elseif ($_GET["verb"] == "ListMetadata") {
-	$query = "SELECT * FROM query_to_xml_and_xmlschema('SELECT * FROM c_14_metadata', true, false, '')";
+	$query = "SELECT * FROM query_to_xml_and_xmlschema('SELECT * FROM frontend.c_14_metadata', true, false, '')";
 } elseif ($_GET["verb"] == "ListRecords") {
-	$query = "SELECT * FROM query_to_xml_and_xmlschema('SELECT * FROM c_14_main', true, false, '')";
+	$query = "SELECT * FROM query_to_xml_and_xmlschema('SELECT * FROM frontend.c_14_main', true, false, '')";
 } elseif (($_GET["verb"] == "GetRecord") && isset($_GET["identifier"])) {
-	$query = "SELECT * FROM query_to_xml_and_xmlschema('SELECT * FROM c_14_main WHERE \"Arch14CZ_ID\" = ''".$_GET["identifier"]."''', true, false, '')";
+	$query = "SELECT * FROM query_to_xml_and_xmlschema('SELECT * FROM frontend.c_14_main WHERE \"Arch14CZ_ID\" = ''".$_GET["identifier"]."''', true, false, '')";
 } elseif (($_GET["verb"] == "ListDictionary") && isset($_GET["name"])) {
 	$table = "";
 	switch ($_GET["name"]) {
@@ -36,7 +36,7 @@ if (!isset($_GET["verb"])) {
 			break;
 	}
 	if ($table != "") {
-		$query = "SELECT * FROM query_to_xml_and_xmlschema('SELECT * FROM ".$table."', true, false, '')";
+		$query = "SELECT * FROM query_to_xml_and_xmlschema('SELECT * FROM frontend.".$table."', true, false, '')";
 	}
 };
 

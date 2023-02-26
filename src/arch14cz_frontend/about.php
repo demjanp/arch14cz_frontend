@@ -1,6 +1,6 @@
 <?php
 require_once("db_connect.php");
-$metadata = pg_query($db, "SELECT * FROM c_14_metadata");
+$metadata = pg_query($db, "SELECT * FROM frontend.c_14_metadata");
 $date_updated = "";
 while ($row = pg_fetch_assoc($metadata)) {
 	if ($row["Variable"] == "date_updated") {
@@ -16,12 +16,15 @@ $date_now = date("d.m.Y");
 <h3>Citation</h3>
 <p>Please cite the database as</p>
 <blockquote>
-<p>Vondrovský, V. - Demján, P. - Dreslerová, D. 2023: Arch14CZ - Radiocarbon Database of the Archaeological Institute of the Czech Academy of Sciences. Available at: <a href="https://www.arch14.cz/">https://www.arch14.cz/</a> [accessed <?php echo $date_now;?>].</p>
+<p>Vondrovský, V. - Demján, P. - Dreslerová, D. 2023: Arch14CZ - Radiocarbon Database of the Archaeological Institute of the Czech Academy of Sciences, Prague. Available at: <a href="https://www.arch14.cz/">https://www.arch14.cz/</a> [accessed <?php echo $date_now;?>].</p>
 </blockquote>
 <h3>Sources</h3>
 <p>All data is based on published sources that are properly cited. Some of the records were previously published in other databases, such as the database <em>Archaeological Chronometry in Slovakia</em> (<a href="http://www.c14.sk">c14.sk</a>)<small><a href="#foot1">1</a></small> and the database of the project <em>Land use, social transformations and woodland in Central European Prehistory</em> (<a href="http://doi.org/10.5334/joad.85">LASOLES</a>)<small><a href="#foot2">2</a></small>. Data from these sources have been verified with the original publications and further enhanced with information about the context and dated sample. In such cases, the database is cited as a secondary source.</p>
 <h3>Last Update</h3>
 <p>Latest database update: <?php echo $date_updated;?></p>
+<h3>Contact</h3>
+<p>Did you notice any mistakes or missing dates? Do you want to upload your radiocarbon dates? Do you have questions concerning the database?</p>
+<p>Let us know at <a href="mailto:vondrovsky@arup.cas.cz">vondrovsky@arup.cas.cz</a></p>
 <h3>Developer Notes</h3>
 <p>The frontend and backend interface of this database is Free and Open Source and available at the following locations:</p>
 <p><a href="https://github.com/demjanp/arch14cz_backend">Arch14CZ - Backend</a></p>

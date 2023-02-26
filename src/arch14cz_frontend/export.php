@@ -78,7 +78,7 @@ function updateRow($row, $keys) {
 }
 
 require_once("db_connect.php");
-$query = "SELECT \"Arch14CZ_ID\", \"C_14_Lab_Code\", \"C_14_Activity\", \"C_14_Uncertainty\", \"C_14_CE_From\", \"C_14_CE_To\", \"C_14_Note\", \"Reliability\", \"Reliability_Note\", \"Country\", \"District\", \"Cadastre\", \"Site\", \"Coordinates\", \"AMCR_ID\", \"Context_Name\", \"Context_Description\", \"Context_Depth\", \"Activity_Area\", \"Feature\", \"Relative_Dating_Name\", \"Relative_Dating_Order\", \"Sample_Number\", \"Sample_Note\", \"Material\", \"Material_Note\", \"Source\" FROM c_14_main";
+$query = "SELECT \"Arch14CZ_ID\", \"C_14_Lab_Code\", \"C_14_Activity\", \"C_14_Uncertainty\", \"C_14_CE_From\", \"C_14_CE_To\", \"C_14_Note\", \"Reliability\", \"Reliability_Note\", \"Country\", \"District\", \"Cadastre\", \"Site\", \"Coordinates\", \"AMCR_ID\", \"Context_Name\", \"Context_Description\", \"Context_Depth\", \"Activity_Area\", \"Feature\", \"Relative_Dating_Name\", \"Relative_Dating_Order\", \"Sample_Number\", \"Sample_Note\", \"Material\", \"Material_Note\", \"Source\" FROM frontend.c_14_main";
 $conditions = [];
 if (!(isset($_GET["csv"]) or isset($_GET["excel"]))) {
 	$conditions = $_SESSION['conditions'];

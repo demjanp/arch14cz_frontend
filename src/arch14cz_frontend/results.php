@@ -1,6 +1,6 @@
 <?php
 session_start();
-$query = "SELECT * FROM c_14_main";
+$query = "SELECT * FROM frontend.c_14_main";
 $conditions = [];
 
 if ($_POST["Cadastre"] != "") {
