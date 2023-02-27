@@ -271,18 +271,32 @@ header a {
 
 /******** FOOTER ********/
 
-.footer {
-	padding: 0.5rem;
-	padding-bottom: 0.5rem;
-	text-align: center;
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
-	font-weight: 400;
-	background-color: #595954;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+@media screen and (max-width: 700px) {
+	
+	#searchform select {
+		max-width: 7rem
+	}
+	
+	footer {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 700px) {
+
+	.footer {
+		padding: 0.5rem;
+		padding-bottom: 0.5rem;
+		text-align: center;
+		color: white;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 12px;
+		font-weight: 400;
+		background-color: #595954;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
 }
 
 .footer a {

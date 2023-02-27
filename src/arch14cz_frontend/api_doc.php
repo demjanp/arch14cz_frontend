@@ -8,7 +8,7 @@
 <p>Query: <a href="https://www.arch14.cz/?verb=ListRecords">https://www.arch14.cz/?verb=ListRecords</a></p>
 <p>Retrieves all records of the database.</p>
 <h3>GetRecord</h3>
-<p>Query: <a href="https://www.arch14.cz/?verb=GetRecord&amp;identifier=A14CZ_21-02-2023_3">https://www.arch14.cz/?verb=GetRecord&amp;identifier=A14CZ_21-02-2023_3</a></p>
+<p>Query: <a href="https://www.arch14.cz/?verb=GetRecord&amp;identifier=A14CZ_20230226_0001">https://www.arch14.cz/?verb=GetRecord&amp;identifier=A14CZ_20230226_0001</a></p>
 <p>Retrieves one record based on the identifier.</p>
 <h3>ListDictionary</h3>
 <p>Retrieves contents of different dictionaries used in the <a href="https://www.arch14.cz/?page=query">query form</a>.
