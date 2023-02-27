@@ -11,12 +11,12 @@ $date_now = date("d.m.Y");
 ?>
 <div class="column">
 <h2>About the Database</h2>
-<p>The purpose of the Radiocarbon Database of the Archaeological Institute of the Czech Academy of Sciences (Arch14CZ) is to gather all radiocarbon dates from archaeological contexts in Czechia. Outside the scope remains radiocarbon dating of palaeoecological contexts without direct human impact, like palynological cores or anthracological sampling. On the other hand, unlimited is the chronological scope of Arch14CZ, meaning that all periods of archaeological research are covered.</p>
+<p>The purpose of the Czech Archaeological Radiocarbon Database (Arch14CZ) is to gather all radiocarbon dates from archaeological contexts in Czechia. Outside the scope remains radiocarbon dating of palaeoecological contexts without direct human impact, like palynological cores or anthracological sampling. On the other hand, unlimited is the chronological scope of Arch14CZ, meaning that all periods of archaeological research are covered.</p>
 <p>It was developed within the project RAMSES (Ultra-trace isotope research in social and environmental studies using accelerator mass spectrometry) and has been available online since March 2023. It is integrated into the structure of the Archaeological Map of the Czech Republic administered by the <a href="https://www.arup.cas.cz/">Institute of Archaeology of the Czech Academy of Sciences</a> with the intention to ensure long-term maintenance and periodic updates.</p>
 <h3>Citation</h3>
 <p>Please cite the database as</p>
 <blockquote>
-<p>Vondrovský, V. - Demján, P. - Dreslerová, D. 2023: Arch14CZ - Radiocarbon Database of the Archaeological Institute of the Czech Academy of Sciences, Prague. Available at: <a href="https://www.arch14.cz/">https://www.arch14.cz/</a> [accessed <?php echo $date_now;?>].</p>
+<p>Vondrovský, V. - Demján, P. - Dreslerová, D. 2023: Arch14CZ - Czech Archaeological Radiocarbon Database. Available at: <a href="https://www.arch14.cz/">https://www.arch14.cz/</a> [accessed <?php echo $date_now;?>].</p>
 </blockquote>
 <h3>Sources</h3>
 <p>All data is based on published sources that are properly cited. Some of the records were previously published in other databases, such as the database <em>Archaeological Chronometry in Slovakia</em> (<a href="http://www.c14.sk">c14.sk</a>) <small><a href="#foot1">1</a></small>, the database of the project <em>Land use, social transformations and woodland in Central European Prehistory</em> (<a href="http://doi.org/10.5334/joad.85">LASOLES</a>) <small><a href="#foot2">2</a></small> and <em>The Cultural Evolution of Neolithic Europe</em> (<a href="https://discovery.ucl.ac.uk/id/eprint/1469811">EUROEVOL</a>) dataset <small><a href="#foot3">3</a></small>. Data from these sources have been verified with the original publications and further enhanced with information about the context and dated sample. In such cases, the database is cited as a secondary source.</p>

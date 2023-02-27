@@ -56,7 +56,7 @@ $materials = pg_query($db, "SELECT * FROM frontend.c_14_dict_material ORDER BY \
 				</table>
 			</fieldset>
 			<fieldset>
-				<legend>Relative Dating</legend>
+				<legend>Published Relative Dating</legend>
 				<table>
 					<tr>
 						<td>From:</td>
@@ -143,4 +143,10 @@ $materials = pg_query($db, "SELECT * FROM frontend.c_14_dict_material ORDER BY \
 			<input type="submit" name="submit" value="Submit" id="btn">
 		</div>
 	</form>
+</div>
+<div class="column">
+	<h2>Relative Dating Ordering</h2>
+	<div class='zoom' id='datings_overview'>
+	   <img src='static/relative_datings.png' width='100%'/>
+	</div>
 </div>

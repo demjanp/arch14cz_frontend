@@ -207,6 +207,20 @@ header a {
 	padding: 0.5rem 0.8rem
 }
 
+@media screen and (min-width: 700px) {
+
+	.zoom > img {
+		max-height: 480px;
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	.zoom > img {
+		width: 100%;
+	}
+}
 
 /******** RESULTS TABLE ********/
 
@@ -268,6 +282,14 @@ header a {
 	cursor: hand;
 }
 
+#results > tbody > tr > td > div.expanded {
+	cursor: default;
+}
+
+#results a {
+	color: blue;
+	text-decoration: underline;
+}
 
 /******** FOOTER ********/
 

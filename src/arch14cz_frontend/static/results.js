@@ -8,6 +8,11 @@ $(document).ready(function() {
 		}
 		$(this).closest("tr").find("div").each(function() {
 			$(this).css("height", h);
+			$(this).addClass("expanded");
+			$(this).off("click");
 		});
 	});
+	
+	$('#datings_overview').zoom();
+	
 });

@@ -18,13 +18,14 @@ if (isset($_GET['verb'])) {
 	<meta name="keywords" content="radiocarbon,czech republic,bohemia,moravia,chronology,dating,database,archaeology" />
 	<meta property="og:title" content="Arch14CZ">
 	<script type="text/javascript" src="static/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="static/jquery.zoom.min.js"></script>
 	<script type="text/javascript" src="static/results.js"></script>
 </head>
 <body>
 	<div id="headline">
 		<header>
 			<h1><a href="?">Arch<span class="logo_a">14</span><span class="logo_b">C</span>Z</a></h1>
-			<p>Radiocarbon Database of the Archaeological Institute of the Czech Academy of Sciences</p>
+			<p>Czech Archaeological Radiocarbon Database</p>
 		</header>
 		<div id="navigation">
 			<ul>

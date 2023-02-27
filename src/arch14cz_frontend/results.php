@@ -64,15 +64,17 @@ $columns = array(
 	"Reliability_Note" => "Reliability Notes", 
 	"Country" => "Country", 
 	"District" => "District", 
-	"Cadastre" => "Cadastre", 
+	"Cadastre" => "Cadastre",
+	"Cadastre_Code" => "Cadastre Code",
 	"Site" => "Site", 
 	"Coordinates" => "Coordinates",
+	"AMCR_ID" => "AMCR",
 	"Context_Name" => "Context Name",
 	"Context_Description" => "Context Description",
 	"Context_Depth" => "Depth",
-	"Activity_Area" => "Area of Activity",
+	"Activity_Area" => "Activity Area",
 	"Feature" => "Feature",
-	"Relative_Dating_Name" => "Relative Dating",
+	"Relative_Dating_Name" => "Published Relative Dating",
 	"Sample_Number" => "Sample Number",
 	"Sample_Note" => "Sample Notes", 
 	"Material" => "Material", 
@@ -116,6 +118,8 @@ $_SESSION['conditions'] = $conditions;
 				} else {
 					echo "<td><div>".$sources[0]."</div></td>";
 				}
+			} elseif ($field == "AMCR_ID") {
+				echo "<td><div><a href=\"https://digiarchiv.aiscr.cz/id/".$row[$field]."\">".$row[$field]."</a></div></td>";
 			} else {
 				echo "<td><div>".$row[$field]."</div></td>";
 			};

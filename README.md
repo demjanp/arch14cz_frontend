@@ -1,5 +1,5 @@
 # Arch14CZ - Frontend
-Frontend interface for Arch14CZ - the database of archaeological radiocarbon dates of the Czech Republic
+Frontend interface for Arch14CZ - Czech Archaeological Radiocarbon Database
 
 Created on 14. 12. 2021
 
@@ -13,7 +13,7 @@ Created on 14. 12. 2021
 5. [License](#license)
 
 ## About Arch14CZ - Frontend <a name="about"></a>
-Frontend web interface for Arch14CZ - the database of archaeological radiocarbon dates of the Czech Republic.
+Frontend web interface for Arch14CZ - Czech Archaeological Radiocarbon Database.
 
 For the backend interface see the [arch14cz_backend](https://github.com/demjanp/arch14cz_backend) project.
 
@@ -48,6 +48,7 @@ Development of this software was supported by OP RDE, MEYS, under the project "U
 
 This software uses the following open source packages:
 * [PHP_XLSXWriter](https://github.com/mk-j/PHP_XLSXWriter)
+* [Zoom](https://github.com/jackmoore/zoom)
 
 ## License <a name="license"></a>
 
