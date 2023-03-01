@@ -1,9 +1,20 @@
 <?php
 require_once("db_connect.php");
 
-$query = "";
+function sanitize_value($value) {
+	
+	echo htmlspecialchars($value, ENT_XML1, 'UTF-8');
+}
+
 if (!isset($_GET["verb"])) {
 	;
+} else if (isset($_GET["name"])) {
+	require_once($_SERVER['DOCUMENT_ROOT']."/api_verbs/".$_GET["verb"]."_".$_GET["name"].".php");
+} else {
+	require_once($_SERVER['DOCUMENT_ROOT']."/api_verbs/".$_GET["verb"].".php");
+}
+
+/*
 } elseif ($_GET["verb"] == "ListMetadata") {
 	$query = "SELECT * FROM query_to_xml_and_xmlschema('SELECT * FROM frontend.c_14_metadata', true, false, '')";
 } elseif ($_GET["verb"] == "ListRecords") {
@@ -49,5 +60,6 @@ if ($query == "") {
 	header('Content-Type: application/xml; charset=utf-8');
 	echo $row["query_to_xml_and_xmlschema"];
 }
+*/
 pg_close($db);
 ?>

@@ -19,7 +19,17 @@ if (isset($_GET['verb'])) {
 	<meta property="og:title" content="Arch14CZ">
 	<script type="text/javascript" src="static/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="static/jquery.zoom.min.js"></script>
+	<script type="text/javascript" src="static/cookie-consent.js"></script>
 	<script type="text/javascript" src="static/results.js"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KE76XYB8LN"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-KE76XYB8LN');
+	</script>
+
 </head>
 <body>
 	<div id="headline">

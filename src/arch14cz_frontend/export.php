@@ -1,7 +1,7 @@
 <?php
 session_start();
 $columns = array(
-		"Arch14CZ_ID" => "string", 
+		"Arch14CZ ID" => "string", 
 		"Lab Code" => "string", 
 		"14C Activity" => "number", 
 		"14C Uncertainty" => "number", 
@@ -11,23 +11,29 @@ $columns = array(
 		"Reliability" => "string", 
 		"Reliability Notes" => "string", 
 		"Country" => "string", 
+		"Country Code" => "string", 
 		"District" => "string", 
+		"District Code" => "integer", 
 		"Cadastre" => "string", 
-		"Cadastre Code" => "string", 
+		"Cadastre Code" => "integer", 
 		"Site" => "string",
+		"Site AMCR ID" => "string",
 		"Coordinates" => "string",
-		"AMCR_ID" => "string",
-		"Context Name" => "string",
-		"Context Description" => "string",
-		"Depth" => "string",
 		"Activity Area" => "string",
+		"Activity Area AMCR ID" => "string",
 		"Feature" => "string",
+		"Feature AMCR ID" => "string",
+		"Context Description" => "string",
+		"Depth cm" => "string",
+		"Context Name" => "string",
 		"Published Relative Dating" => "string",
+		"Relative Dating AMCR ID" => "string",
 		"Dating Order From" => "integer",
 		"Dating Order To" => "integer",
 		"Sample Number" => "string",
 		"Sample Notes" => "string", 
 		"Material" => "string", 
+		"Material AMCR ID" => "string", 
 		"Material Notes" => "string", 
 		"Source" => "string",
 	);
@@ -42,23 +48,29 @@ $keys = array(
 		"Reliability",
 		"Reliability_Note",
 		"Country",
+		"Country_Code",
 		"District",
+		"District_Code",
 		"Cadastre",
 		"Cadastre_Code",
 		"Site",
+		"Site_AMCR_ID",
 		"Coordinates",
-		"AMCR_ID",
-		"Context_Name",
+		"Activity_Area",
+		"Activity_Area_AMCR_ID",
+		"Feature",
+		"Feature_AMCR_ID",
 		"Context_Description",
 		"Context_Depth",
-		"Activity_Area",
-		"Feature",
+		"Context_Name",
 		"Relative_Dating_Name",
+		"Relative_Dating_AMCR_ID",
 		"Order_From",
 		"Order_To",
 		"Sample_Number",
 		"Sample_Note",
 		"Material",
+		"Material_AMCR_ID",
 		"Material_Note",
 		"Source",
 	);
@@ -80,7 +92,7 @@ function updateRow($row, $keys) {
 }
 
 require_once("db_connect.php");
-$query = "SELECT \"Arch14CZ_ID\", \"C_14_Lab_Code\", \"C_14_Activity\", \"C_14_Uncertainty\", \"C_14_CE_From\", \"C_14_CE_To\", \"C_14_Note\", \"Reliability\", \"Reliability_Note\", \"Country\", \"District\", \"Cadastre\", \"Cadastre_Code\", \"Site\", \"Coordinates\", \"AMCR_ID\", \"Context_Name\", \"Context_Description\", \"Context_Depth\", \"Activity_Area\", \"Feature\", \"Relative_Dating_Name\", \"Relative_Dating_Order\", \"Sample_Number\", \"Sample_Note\", \"Material\", \"Material_Note\", \"Source\" FROM frontend.c_14_main ORDER BY \"Arch14CZ_ID\" ASC";
+$query = "SELECT \"Arch14CZ_ID\", \"C_14_Lab_Code\", \"C_14_Activity\", \"C_14_Uncertainty\", \"C_14_CE_From\", \"C_14_CE_To\", \"C_14_Note\", \"Reliability\", \"Reliability_Note\", \"Country\", \"Country_Code\", \"District\", \"District_Code\", \"Cadastre\", \"Cadastre_Code\", \"Site\", \"Site_AMCR_ID\", \"Coordinates\", \"Activity_Area\", \"Activity_Area_AMCR_ID\", \"Feature\", \"Feature_AMCR_ID\", \"Context_Description\", \"Context_Name\", \"Context_Depth\", \"Relative_Dating_Name\", \"Relative_Dating_AMCR_ID\", \"Relative_Dating_Order\", \"Sample_Number\", \"Sample_Note\", \"Material\", \"Material_AMCR_ID\", \"Material_Note\", \"Source\" FROM frontend.c_14_main";
 $conditions = [];
 if (!(isset($_GET["csv"]) or isset($_GET["excel"]))) {
 	$conditions = $_SESSION['conditions'];
@@ -88,6 +100,8 @@ if (!(isset($_GET["csv"]) or isset($_GET["excel"]))) {
 if ($conditions) {
 	$query = $query." WHERE ".implode(" AND ", $conditions);
 };
+$query = $query." ORDER BY \"Arch14CZ_ID\" ASC";
+
 $results = pg_query($db, $query);
 
 if(isset($_POST["Export_Excel"]) or isset($_GET["excel"])) {

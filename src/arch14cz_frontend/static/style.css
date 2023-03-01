@@ -103,6 +103,11 @@ header a {
 	color: #DCD2C7;
 	font-weight: 600;
 	font-size: 20px;
+	padding-top: 0.8em;
+}
+
+#content h2.first {
+	padding-top: 0.5em;
 }
 
 #content h3 {
@@ -125,8 +130,10 @@ header a {
 	clear: both;
 	background-color: #595954;
 	color: white;
-	padding: 0.5rem;
+	padding: 0.5em;
+	padding-top: 0;
 	margin: 0.5em;
+	margin-top: -0.5em;
 	margin-bottom: 1em;
 }
 
@@ -182,7 +189,9 @@ header a {
 	background-color: #595954;
 	color: white;
 	padding: 0.5rem;
+	padding-top: 0;
 	margin: 0.5em;
+	margin-top: -0.5em;
 	margin-bottom: 1em;
 }
 

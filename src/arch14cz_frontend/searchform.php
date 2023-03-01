@@ -10,7 +10,7 @@ $materials = pg_query($db, "SELECT * FROM frontend.c_14_dict_material ORDER BY \
 ?>
 
 <div id="searchform">
-	<h2>Query Database</h2>
+	<h2 class="first">Query Database</h2>
 	<form action="" method="post">
 		<div class="searchgroup">
 			<fieldset>
@@ -18,15 +18,7 @@ $materials = pg_query($db, "SELECT * FROM frontend.c_14_dict_material ORDER BY \
 				<table>
 					<tr>
 						<td>Country:</td>
-						<td>
-							<select name="Country" id="Country">
-								<option value=""></option>
-								<?php
-								while ($row = pg_fetch_assoc($countries)) { ?>
-									<option value="<?php echo $row["Name"]; ?>"><?php echo $row["Name"]; ?></option>
-								<?php };?>
-							</select>
-						</td>
+						<td>Czech Republic</td>
 					</tr>
 					<tr>
 						<td>District:</td>
@@ -102,6 +94,7 @@ $materials = pg_query($db, "SELECT * FROM frontend.c_14_dict_material ORDER BY \
 						</td>
 					</tr>
 				</table>
+				Note: BCE dates are entered as negative values.
 			</fieldset>
 		</div>
 		
