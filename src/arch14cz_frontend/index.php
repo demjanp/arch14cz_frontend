@@ -53,7 +53,7 @@ if (isset($_GET['verb'])) {
 		?>
 	</div>
 	<footer>
-		<div class="footer">Powered by <img height="20" src="static/dep_cube.svg"/> <a href = "https://github.com/demjanp/deposit">Deposit</a></div>
+		<div class="footer">Powered by <img height="20" src="static/dep_cube.svg"/> <a href = "https://github.com/demjanp/deposit">Deposit</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="?page=cookiepolicy">Cookie Policy</a></div>
 	</footer>
 </body>
 </html>

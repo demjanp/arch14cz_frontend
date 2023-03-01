@@ -101,7 +101,7 @@ $materials = pg_query($db, "SELECT * FROM frontend.c_14_dict_material ORDER BY \
 		<div class="searchgroup">
 		
 			<fieldset>
-				<legend>Area of Activity:</legend>
+				<legend>Activity Area:</legend>
 				<div class = "checklist">
 					<?php
 					while ($row = pg_fetch_assoc($activity_areas)) { ?>
