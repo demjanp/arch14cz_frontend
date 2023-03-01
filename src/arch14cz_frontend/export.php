@@ -17,7 +17,7 @@ $columns = array(
 		"Cadastre" => "string", 
 		"Cadastre Code" => "integer", 
 		"Site" => "string",
-		"Site AMCR ID" => "string",
+		"Fieldwork Event ID" => "string",
 		"Coordinates" => "string",
 		"Activity Area" => "string",
 		"Activity Area AMCR ID" => "string",
@@ -54,7 +54,7 @@ $keys = array(
 		"Cadastre",
 		"Cadastre_Code",
 		"Site",
-		"Site_AMCR_ID",
+		"Fieldwork_Event_ID",
 		"Coordinates",
 		"Activity_Area",
 		"Activity_Area_AMCR_ID",
@@ -92,7 +92,7 @@ function updateRow($row, $keys) {
 }
 
 require_once("db_connect.php");
-$query = "SELECT \"Arch14CZ_ID\", \"C_14_Lab_Code\", \"C_14_Activity\", \"C_14_Uncertainty\", \"C_14_CE_From\", \"C_14_CE_To\", \"C_14_Note\", \"Reliability\", \"Reliability_Note\", \"Country\", \"Country_Code\", \"District\", \"District_Code\", \"Cadastre\", \"Cadastre_Code\", \"Site\", \"Site_AMCR_ID\", \"Coordinates\", \"Activity_Area\", \"Activity_Area_AMCR_ID\", \"Feature\", \"Feature_AMCR_ID\", \"Context_Description\", \"Context_Name\", \"Context_Depth\", \"Relative_Dating_Name\", \"Relative_Dating_AMCR_ID\", \"Relative_Dating_Order\", \"Sample_Number\", \"Sample_Note\", \"Material\", \"Material_AMCR_ID\", \"Material_Note\", \"Source\" FROM frontend.c_14_main";
+$query = "SELECT \"Arch14CZ_ID\", \"C_14_Lab_Code\", \"C_14_Activity\", \"C_14_Uncertainty\", \"C_14_CE_From\", \"C_14_CE_To\", \"C_14_Note\", \"Reliability\", \"Reliability_Note\", \"Country\", \"Country_Code\", \"District\", \"District_Code\", \"Cadastre\", \"Cadastre_Code\", \"Site\", \"Fieldwork_Event_ID\", \"Coordinates\", \"Activity_Area\", \"Activity_Area_AMCR_ID\", \"Feature\", \"Feature_AMCR_ID\", \"Context_Description\", \"Context_Name\", \"Context_Depth\", \"Relative_Dating_Name\", \"Relative_Dating_AMCR_ID\", \"Relative_Dating_Order\", \"Sample_Number\", \"Sample_Note\", \"Material\", \"Material_AMCR_ID\", \"Material_Note\", \"Source\" FROM frontend.c_14_main";
 $conditions = [];
 if (!(isset($_GET["csv"]) or isset($_GET["excel"]))) {
 	$conditions = $_SESSION['conditions'];

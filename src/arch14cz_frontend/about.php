@@ -17,7 +17,7 @@ $date_now = date("d.m.Y");
 <h2>Citation</h2>
 <p>Please cite the database as</p>
 <blockquote>
-<p>Vondrovský, V. - Demján, P. - Dreslerová, D. 2023: Arch14CZ - Czech Archaeological Radiocarbon Database. Available at: <a href="https://www.arch14.cz/">https://www.arch14.cz/</a> [accessed <?php echo $date_now;?>].</p>
+<p>Vondrovský, V. - Demján, P. - Dreslerová, D. 2023: Arch14CZ - Czech Archaeological Radiocarbon Database. Available at: <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/">http://<?php echo $_SERVER['SERVER_NAME']; ?>/</a> [accessed <?php echo $date_now;?>].</p>
 </blockquote>
 
 <h2>Data Structure</h2>

@@ -67,7 +67,7 @@ $columns = array(
 	"Cadastre" => "Cadastre",
 	"Site" => "Site", 
 	"Coordinates" => "Coordinates",
-	"Site_AMCR_ID" => "Site AMCR",
+	"Fieldwork_Event_ID" => "Fieldwork Event ID",
 	"Activity_Area" => "Activity Area",
 	"Feature" => "Feature",
 	"Context_Description" => "Context Description",
@@ -117,8 +117,8 @@ $_SESSION['conditions'] = $conditions;
 				} else {
 					echo "<td><div>".$sources[0]."</div></td>";
 				}
-			} elseif ($field == "Site_AMCR_ID") {
-				echo "<td><div><a href=\"https://digiarchiv.aiscr.cz/id/".$row[$field]."\">".$row[$field]."</a></div></td>";
+			} elseif ($field == "Fieldwork_Event_ID") {
+				echo "<td><div><a href=\"https://digiarchiv.aiscr.cz/id/".$row[$field]."\" target=\"_blank\">".$row[$field]."</a></div></td>";
 			} else {
 				echo "<td><div>".$row[$field]."</div></td>";
 			};
