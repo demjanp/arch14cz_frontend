@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/xml; charset=utf-8');
-header('Content-Disposition: attachment; filename=Record_'.$_GET["identifier"].'.xml');
+header('Content-Disposition: attachment; filename=Record_'.$_GET["code"].'.xml');
 
 function calcOrder($row) {
 	
@@ -17,7 +17,7 @@ function calcOrder($row) {
 <?xml version="1.0" encoding="utf-8" ?>
 <arch14cz:table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arch14cz="<?php echo $schema_uri; ?>" xsi:schemaLocation="<?php echo $schema_uri." ".$schema_uri."arch14cz.xsd"; ?>">
 <?php
-$results = pg_query($db, "SELECT * FROM frontend.c_14_main WHERE \"Arch14CZ_ID\" = '".$_GET["identifier"]."'");
+$results = pg_query($db, "SELECT * FROM frontend.c_14_main WHERE \"C_14_Lab_Code\" = '".$_GET["code"]."'");
 while($row = pg_fetch_assoc($results)) {
 	$row = calcOrder($row);
 ?>

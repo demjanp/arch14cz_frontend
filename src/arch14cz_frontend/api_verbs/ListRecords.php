@@ -1,5 +1,6 @@
 <?php
 header('Content-Type: application/xml; charset=utf-8');
+header('Content-Disposition: attachment; filename=Records.xml');
 
 function calcOrder($row) {
 	
@@ -14,7 +15,7 @@ function calcOrder($row) {
 
 ?>
 <?xml version="1.0" encoding="utf-8" ?>
-<arch14cz:table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arch14cz="<?php echo $schema_uri; ?>" xsi:schemaLocation="<?php echo $schema_uri; ?>">
+<arch14cz:table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arch14cz="<?php echo $schema_uri; ?>" xsi:schemaLocation="<?php echo $schema_uri." ".$schema_uri."arch14cz.xsd"; ?>">
 <?php
 $results = pg_query($db, "SELECT * FROM frontend.c_14_main");
 while($row = pg_fetch_assoc($results)) {

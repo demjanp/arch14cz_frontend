@@ -5,7 +5,7 @@ $server = "http://".$_SERVER['SERVER_NAME'];
 <div class="column">
 <h2 class="first">Arch14CZ - API</h2>
 <p>The Arch14CZ database can be accessed via an API in XML format.</p>
-<p><a href="<?php echo $server; ?>/schema/1.0/">XML schema</a></p>
+<p><a href="<?php echo $server; ?>/schema/1.0/arch14cz.xsd">XML schema</a></p>
 <p>Different types of data are queried using the following verbs:</p>
 <h3>ListMetadata</h3>
 <p>Query: <a href="?verb=ListMetadata"><?php echo $server; ?>/?verb=ListMetadata</a></p>
@@ -15,7 +15,10 @@ $server = "http://".$_SERVER['SERVER_NAME'];
 <p>Retrieves all records of the database.</p>
 <h3>GetRecord</h3>
 <p>Query: <a href="?verb=GetRecord&amp;identifier=A14CZ_20230301_0004"><?php echo $server; ?>/?verb=GetRecord&amp;identifier=A14CZ_20230301_0004</a></p>
-<p>Retrieves one record based on the identifier.</p>
+<p>Retrieves one record based on the Arch14CZ ID.</p>
+<h3>GetLabCode</h3>
+<p>Query: <a href="?verb=GetLabCode&amp;code=CRL-9105"><?php echo $server; ?>/?verb=GetLabCode&amp;code=CRL-9105</a></p>
+<p>Retrieves one record based on the Lab Code.</p>
 <h3>ListDictionary</h3>
 <p>Retrieves contents of different dictionaries used in the <a href="<?php echo $server; ?>/?page=query">query form</a>.
 The following dictionaries can be retrieved:</p>

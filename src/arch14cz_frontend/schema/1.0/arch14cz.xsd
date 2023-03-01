@@ -1,14 +1,8 @@
-<?php
-header('Content-Type: application/xml; charset=utf-8');
-header('Content-Disposition: attachment; filename=arch14cz.xsd');
-
-$schema_uri = "https://".$_SERVER['SERVER_NAME']."/schema/1.0/";
-?>
 <?xml version="1.0" encoding="utf-8" ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:arch14cz="<?php echo $schema_uri; ?>" targetNamespace="<?php echo $schema_uri; ?>" elementFormDefault="qualified" version="1.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:arch14cz="https://www.arch14.cz/schema/1.0/" targetNamespace="https://www.arch14.cz/schema/1.0/" elementFormDefault="qualified" version="1.0">
 
   <xs:annotation>
-    <xs:documentation>XML Schema for native export of the Arch14CZ database. Related API: https://<?php echo $_SERVER['SERVER_NAME']; ?>/?page=api_doc</xs:documentation>
+    <xs:documentation>XML Schema for native export of the Arch14CZ database. Related API: https://www.arch14.cz/?page=api_doc</xs:documentation>
   </xs:annotation>
 
   <xs:complexType name="refType">
