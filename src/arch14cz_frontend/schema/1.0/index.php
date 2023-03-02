@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/xml; charset=utf-8');
-header('Content-Disposition: attachment; filename=arch14cz.xsd');
+header('Content-Disposition: inline; filename=arch14cz.xsd');
 
 $schema_uri = "https://".$_SERVER['SERVER_NAME']."/schema/1.0/";
 ?>

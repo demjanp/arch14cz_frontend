@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/xml; charset=utf-8');
-header('Content-Disposition: attachment; filename=Record_'.$_GET["identifier"].'.xml');
+header('Content-Disposition: inline; filename=Record_'.$_GET["identifier"].'.xml');
 
 function calcOrder($row) {
 	
